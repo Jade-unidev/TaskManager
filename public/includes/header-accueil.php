@@ -13,18 +13,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     </head>
     <body>
         
         <div class="header">
 
-            <img src="includes/images/pdp.png" class="pdp">
+            <img src="includes/images/pdp.png" class="pdp" onclick="toggleMenu()">
 
             <h1 class="title-header">Accueil</h1>
             <h1 class="title-header">To-Do List</h1>
             <div class="under-accueil"></div>
 
         </div>
+
+
+
+        
 
     </body>
 </html>

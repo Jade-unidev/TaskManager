@@ -10,7 +10,7 @@
     width: 6em;
     height: 6em;
     margin-top: 2%;
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 .title-header {
@@ -47,7 +47,8 @@
     position: absolute;
     background-color: #AFB8FF;
     width: 100vw; 
-    height: 100em; 
+    height: 50em; 
+    z-index: -1;
 }
 
 .title-accueil-tm {
@@ -134,3 +135,152 @@
     z-index: 9999; /* plus ce chiffre est grand, plus c’est devant */
 }
 
+.bande {
+    background-color: #FFCDFF;
+    width: 100vw;
+    height: 8em;
+    margin-top: 46em;
+    display: flex;
+}
+
+.title-bande {
+    margin-left: 38%;
+    margin-top: 1em;
+    font-size: 2.5em;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+.under-bande {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 8em;
+    margin-top: 50em;
+}
+
+.bull1 {
+    background-color: #FFCDFF;
+    display: flex;
+    width: 50em;
+    height: 30em;
+    margin-left: 65em;
+    margin-top: -48em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 5em;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+
+.txt1 {
+    margin-left: 1.5em;
+    margin-top: 2em;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+.bull2 {
+    background-color: #C1ADFF;
+    display: flex;
+    width: 50em;
+    height: 30em;
+    margin-left: 3em;
+    margin-top: -5em;
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+
+.txt2 {
+    margin-left: 1.5em;
+    margin-top: 2em;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+.droit {
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 8em;
+    margin-top: 7em;
+    display: flex;
+}
+
+.txt-droit {
+    margin-left: 14.5em;
+    margin-top: 1.5em;
+    font-weight: 300;
+    font-family: "Montserrat";
+}
+
+.menu {
+  position: absolute;
+  top: 1em; 
+  left: 2em;
+  background-color: #C1ADFF;
+  border: 0.1em solid #a390df;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 20em;
+  height: 40em;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-btn {
+    margin-left: 3em;
+    margin-top: 3.5em;
+    outline: none;
+    color: #d883d8;
+    font-weight: 900;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #ffa5ff;
+    border-radius: 15px;
+    background-color: #FFCDFF;
+    box-shadow: 0 0 0 4px #FFCDFF, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.menu-btn-deco {
+    margin-left: 3em;
+    margin-top: 3.5em;
+    outline: none;
+    color: #aa4545;
+    font-weight: 900;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #c75252;
+    border-radius: 15px;
+    background-color: #e95f5f;
+    box-shadow: 0 0 0 4px #e95f5f, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.menu button:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.profil-menu {
+    display: flex;
+}
+
+.username-menu {
+    margin-left: 0.5em;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.mail-menu {
+    margin-left: -10em;
+    margin-top: 4em;
+    font-size: 1em;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
