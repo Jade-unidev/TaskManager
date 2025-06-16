@@ -1,0 +1,136 @@
+.header {
+    background-color: #AFB8FF;
+    width: 100vw;
+    height: 10em;
+    margin-top: -1%;
+    display: flex;
+}
+
+.pdp {
+    width: 6em;
+    height: 6em;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+.title-header {
+    margin-left: 3em;
+    margin-top: 2em;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+.under-accueil {
+    background-color: #E3BDFF;
+    width: 8em;
+    height: 0.4em;
+    margin-left: -23.2em;
+    margin-top: 7em;
+}
+
+.under-todo {
+    background-color: #E3BDFF;
+    width: 9.5em;
+    height: 0.4em;
+    margin-left: -9.5em;
+    margin-top: 7em;
+}
+
+.separation-header {
+    background-color: black;
+    width: 100vw;
+    height: 0.1em;
+    margin-left: -1%;
+}
+
+.body-accueil {
+    position: absolute;
+    background-color: #AFB8FF;
+    width: 100vw; 
+    height: 100em; 
+}
+
+.title-accueil-tm {
+    font-size: 5em;
+    font-family: "Inknut Antiqua", serif;
+    margin-top: 1em;
+    margin-left: 5.5em;
+}
+
+.under-title-accueil {
+    font-size: 2em;
+    font-family: "Inconsolata", monospace;
+    font-weight: 200;
+    margin-top: -2em;
+    margin-left: 15em;
+}
+
+.ico_div {
+    margin-top: -9em;
+    margin-left: 65.5em;
+    background-color: #E3BDFF;
+    width: 20em;
+    height: 20em;
+    border-radius: 20em;
+}
+
+.ico {
+    width: 15em;
+    margin-top: 2em;
+    margin-left: 2.5em;
+}
+
+.btn_start {
+    position: relative;
+    width: 40em;
+    height: 8em;
+    margin-left: 30%;
+    margin-top: 5em;
+    background-color: #C1ADFF;
+    border: none; /* on laisse ::after gérer la bordure */
+    border-top-left-radius: 20em;
+    border-bottom-left-radius: 5em;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 20em;
+    z-index: 1;
+}
+
+/* Effet de fond en hover */
+.btn_start:hover::before {
+    transform: scaleX(1);
+}
+
+.btn_start::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    border-radius: inherit;
+    background-color: #AFB8FF;
+    transition: all 0.475s;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Bordure qui s'affiche SUR tout le contour */
+.btn_start::after {
+    content: "";
+    position: absolute;
+    inset: 0; /* remplace top/left/width/height */
+    border-radius: inherit;
+    border: 0.1em solid #000000;
+    z-index: 3;
+    pointer-events: none;
+    box-sizing: border-box; /* SUPER IMPORTANT pour que la bordure ne dépasse pas */
+}
+
+
+
+.title_btn {
+    font-family:  "Montserrat";
+    font-weight: 200;
+    position: relative; /* ou absolute/fixed selon le contexte */
+    z-index: 9999; /* plus ce chiffre est grand, plus c’est devant */
+}
+
