@@ -37,57 +37,13 @@ require __DIR__ . '/../config/connect.php';
     </head>
     <body>
         
-        <?php include 'includes/header-accueil.php'; ?>
+        <?php include 'includes/header-todo.php'; ?>
 
         <div class="separation-header"></div>
-        <div class="body-accueil">
-            <h1 class="title-accueil-tm">TaskManager</h1>
-            <h3 class="under-title-accueil">Moins de stress, plus de progrès.</h3>
-            <div class="ico_div">
-                <img src="includes/images/ico.png" class="ico">
-            </div>
-        </div>
+        
 
-        <h2 class="desc">
-            Pour continuer, il faut d'abord t’enregistrer. 
-            <br>Si tu l’as déjà fait, clique simplement sur le bouton To-Do List en haut pour accéder à ta liste. 
-            <br>Sinon, rends-toi sur ton profil en haut à gauche pour gérer les paramètres de ton compte.
-        </h2>
 
-        <div class="bande">
-            <h1 class="title-bande">Derrière ce projet</h1>
-        </div>
-        <div class="under-bande">
-            <div class="bull1">
-                <h1 class="txt1">
-                    Ce site a été conçu et développé par Jade, une 
-                    <br>lycéenne passionnée par le développement, 
-                    <br>dans le cadre d’un stage de seconde.
-                    <br>L’objectif ? Créer une application simple, 
-                    <br>intuitive et efficace pour gérer ses tâches au 
-                    <br>quotidien.
-                    <br>TaskManager, c’est le fruit d’un stage, de 
-                    <br>beaucoup d’apprentissage, et surtout d’une 
-                    <br>grosse dose de motivation.
-                </h1>
-            </div>
-            <div class="bull2">
-                <h1 class="txt2">
-                    Ce site a été conçu et développé par Jade, une 
-                    <br>lycéenne passionnée par le développement, 
-                    <br>dans le cadre d’un stage de seconde.
-                    <br>L’objectif ? Créer une application simple, 
-                    <br>intuitive et efficace pour gérer ses tâches au 
-                    <br>quotidien.
-                    <br>TaskManager, c’est le fruit d’un stage, de 
-                    <br>beaucoup d’apprentissage, et surtout d’une 
-                    <br>grosse dose de motivation.
-                </h1>
-            </div>
-            <div class="droit">
-                <h1 class="txt-droit">© Jade Dousset 2025 - TaskManager - Tous droits réservés</h1>
-            </div>
-        </div>
+        
 
         <div id="menu-deroulant" class="menu hidden">
             <div class="profil-menu">    

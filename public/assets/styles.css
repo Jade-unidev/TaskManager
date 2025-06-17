@@ -6,6 +6,11 @@
     display: flex;
 }
 
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .pdp {
     width: 6em;
     height: 6em;
@@ -51,6 +56,15 @@
     z-index: -1;
 }
 
+.desc {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 20em;
+  margin-left: -3em;
+  text-align: center;
+}
+
 .title-accueil-tm {
     font-size: 5em;
     font-family: "Inknut Antiqua", serif;
@@ -61,14 +75,14 @@
 .under-title-accueil {
     font-size: 2em;
     font-family: "Inconsolata", monospace;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: -2em;
     margin-left: 15em;
 }
 
 .ico_div {
-    margin-top: -9em;
-    margin-left: 65.5em;
+    margin-top: -13em;
+    margin-left: 73em;
     background-color: #E3BDFF;
     width: 20em;
     height: 20em;
@@ -81,58 +95,13 @@
     margin-left: 2.5em;
 }
 
-.btn_start {
-    position: relative;
-    width: 40em;
-    height: 8em;
-    margin-left: 30%;
-    margin-top: 5em;
-    background-color: #C1ADFF;
-    border: none; /* on laisse ::after gérer la bordure */
-    border-top-left-radius: 20em;
-    border-bottom-left-radius: 5em;
-    border-top-right-radius: 5em;
-    border-bottom-right-radius: 20em;
-    z-index: 1;
-}
-
-/* Effet de fond en hover */
-.btn_start:hover::before {
-    transform: scaleX(1);
-}
-
-.btn_start::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    border-radius: inherit;
-    background-color: #AFB8FF;
-    transition: all 0.475s;
-    z-index: 2;
-    pointer-events: none;
-}
-
-/* Bordure qui s'affiche SUR tout le contour */
-.btn_start::after {
-    content: "";
-    position: absolute;
-    inset: 0; /* remplace top/left/width/height */
-    border-radius: inherit;
-    border: 0.1em solid #000000;
-    z-index: 3;
-    pointer-events: none;
-    box-sizing: border-box; /* SUPER IMPORTANT pour que la bordure ne dépasse pas */
-}
-
-
-
 .title_btn {
     font-family:  "Montserrat";
-    font-weight: 200;
-    position: relative; /* ou absolute/fixed selon le contexte */
-    z-index: 9999; /* plus ce chiffre est grand, plus c’est devant */
+    font-weight: 500;
+    position: relative;
+    z-index: 9999;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #ffffff;
 }
 
 .bande {
@@ -264,7 +233,7 @@
 
 .menu button:active {
     transform: translateX(0.1em) translateY(0.1em);
-    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px #aaaaaa, 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 .profil-menu {
@@ -284,3 +253,371 @@
     font-family: "Montserrat";
     font-weight: 300;
 }
+
+.left-side-account {
+    background-color: #C1ADFF;
+    width: 30em;
+    height: 46.4em;
+    margin-left: 0em;
+    margin-top: 0em;
+    z-index: -1;
+}
+
+.menu-btn2 {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 3.5em;
+    outline: none;
+    color: #d883d8;
+    font-weight: 900;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #ffa5ff;
+    border-radius: 15px;
+    background-color: #FFCDFF;
+    box-shadow: 0 0 0 4px #FFCDFF, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.menu-log {
+    width: 13em;
+    margin-left: 3em;
+    margin-top: 3.5em;
+    outline: none;
+    color: #d883d8;
+    font-weight: 900;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #ffa5ff;
+    border-radius: 15px;
+    background-color: #FFCDFF;
+    box-shadow: 0 0 0 4px #FFCDFF, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.menu-reg {
+    width: 14em;
+    margin-left: 2.5em;
+    margin-top: 3.5em;
+    outline: none;
+    color: #d883d8;
+    font-weight: 900;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #ffa5ff;
+    border-radius: 15px;
+    background-color: #FFCDFF;
+    box-shadow: 0 0 0 4px #FFCDFF, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.menu-btn-deco2 {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 3.5em;
+    outline: none;
+    color: #aa4545;
+    font-weight: 900;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 2px dashed #c75252;
+    border-radius: 15px;
+    background-color: #e95f5f;
+    box-shadow: 0 0 0 4px #e95f5f, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+
+.div-btn-side button:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: 0 0 0 4px #aaaaaa, 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.profil-menu2 {
+    display: flex;
+}
+
+.username-menu2 {
+    margin-left: 0.5em;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.mail-menu2 {
+    margin-left: -10em;
+    margin-top: 4em;
+    font-size: 1em;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.div-btn-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.separation-side {
+    background-color: black;
+    width: 0.1em;
+    height: 46.5em;
+    margin-left: 30em;
+    margin-top: -46.5em;
+}
+
+.body-account {
+    position: absolute;
+    background-color: #AFB8FF;
+    width: 100vw; 
+    height: 50em; 
+    z-index: -3;
+    margin-top: -50em;
+}
+
+.profil-account {
+    display: flex;
+}
+
+.pdp-account {
+    width: 20em;
+    height: 20em;
+    margin-left: 35em;
+    margin-top: 5em;
+    z-index: 999;
+}
+
+.username-account {
+    margin-left: 1em;
+    margin-top: 1.5em;
+    font-size: 5em;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.mail-account {
+    margin-left: -12em;
+    margin-top: 7em;
+    font-size: 2em;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.div-under-user {
+    background-color: #C1ADFF;
+    width: 50em;
+    height: 10em;
+    margin-left: 55em;
+    margin-top: 1em;
+    border-radius: 2em;
+    border-color: #000000;
+    border: 0.2em solid #000000;
+    display: flex;
+}
+
+.membre {
+    margin-left: 5em;
+    margin-top: 2em;
+    font-family: "Montserrat";
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.x {
+    margin-left: 1em;
+    margin-top: 2em;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+.j {
+    margin-left: 1em;
+    margin-top: 2em;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+.container-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "bt-1 bt-2 bt-3"
+    "bt-4 bt-5 bt-6";
+  position: relative;
+  perspective: 800;
+  padding: 0;
+  width: 135px;
+  height: 47px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.container-button:active {
+  transform: scale(0.95);
+}
+
+.hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+
+.bt-1 {
+  grid-area: bt-1;
+}
+
+.bt-2 {
+  grid-area: bt-2;
+}
+
+.bt-3 {
+  grid-area: bt-3;
+}
+
+.bt-4 {
+  grid-area: bt-4;
+}
+
+.bt-5 {
+  grid-area: bt-5;
+}
+
+.bt-6 {
+  grid-area: bt-6;
+}
+
+.bt-1:hover ~ button {
+  transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);
+  box-shadow: -2px -2px #18181888;
+}
+
+.bt-1:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: -2px -2px #18181888;
+}
+
+.bt-3:hover ~ button {
+  transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);
+  box-shadow: 2px -2px #18181888;
+}
+
+.bt-3:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: 2px -2px #18181888;
+}
+
+.bt-4:hover ~ button {
+  transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+  box-shadow: -2px 2px #18181888;
+}
+
+.bt-4:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: -2px 2px #18181888;
+}
+
+.bt-6:hover ~ button {
+  transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+  box-shadow: 2px 2px #18181888;
+}
+
+.bt-6:hover ~ button::after {
+  animation: shake 0.5s ease-in-out 0.3s;
+  text-shadow: 2px 2px #18181888;
+}
+
+.hover:hover ~ button::before {
+  background: transparent;
+}
+
+.hover:hover ~ button::after {
+  content: "Accueil";
+  top: -150%;
+  transform: translate(-50%, 0);
+  font-size: 34px;
+  color: #FFCDFF;
+}
+
+.button-back {
+  position: absolute;
+  padding: 0;
+  width: 135px;
+  height: 47px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  border: 3px solid #FFCDFF;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-back::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  height: 47px;
+  background-color: #FFCDFF;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.button-back::after {
+  content: "Retour";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+  height: 47px;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 47px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+@keyframes shake {
+  0% {
+    left: 45%;
+  }
+
+  25% {
+    left: 54%;
+  }
+
+  50% {
+    left: 48%;
+  }
+
+  75% {
+    left: 52%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+.div-under-username {
+    background-color: #C1ADFF;
+    width: 50em;
+    height: 15em;
+    margin-left: 55em;
+    margin-top: 1em;
+    border-radius: 2em;
+    border-color: #000000;
+    border: 0.2em solid #000000;
+    display: flex;
+}
+

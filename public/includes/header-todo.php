@@ -23,8 +23,8 @@
 
             <img src="includes/images/pdp.png" class="pdp">
 
-            <h1 class="title-header">Accueil</h1>
-            <h1 class="title-header">To-Do List</h1>
+            <a class="link" href="../index.php"> <h1 class="title-header">Accueil</h1> </a>
+            <a class="link" href="../todo.php"> <h1 class="title-header">To-Do List</h1> </a>
             <div class="under-todo"></div>
 
         </div>

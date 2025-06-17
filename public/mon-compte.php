@@ -1,3 +1,15 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    exit();
+}
+
+require __DIR__ . '/../config/connect.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,18 +27,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     </head>
     <body>
         
-        <div class="header">
+        <?php include 'includes/header.php'; ?>
 
-            <img src="includes/images/pdp.png" class="pdp">
+        <?php include 'includes/left-side.php'; ?>
 
-            <a class="link" href="../index.php"> <h1 class="title-header">Accueil</h1> </a>
-            <a class="link" href="../todo.php"> <h1 class="title-header">To-Do List</h1> </a>
+        <div class="body-account">
+
+            <div class="profil-account">    
+                <img src="includes/images/pdp.png" class="pdp-account">
+                <h1 class="username-account">username</h1>
+                <h1 class="mail-account">exemple@gmail.com</h1>
+            </div>
+
+            <div class="div-under-user">
+
+                <h1 class="membre">Membre depuis :</h1>
+
+                <h1 class="x">0</h1>
+
+                <h1 class="j">jours</h1>
+
+            </div>
 
         </div>
 
+        <script src="/assets/menu.js"></script>
     </body>
 </html>
