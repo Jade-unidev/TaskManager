@@ -56,6 +56,12 @@
     z-index: -1;
 }
 
+.salut-name {
+  margin-left: 48em;
+  font-family: "Montserrat";
+  font-weight: 200;
+}
+
 .desc {
   font-family: "Montserrat";
   font-weight: 200;
@@ -192,7 +198,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   z-index: 1000;
   width: 20em;
-  height: 40em;
+  height: 45em;
 }
 
 .hidden {
@@ -241,17 +247,10 @@
 }
 
 .username-menu {
-    margin-left: 0.5em;
+    margin-left: 1em;
+    margin-top: 1em;
     font-family: "Montserrat";
     font-weight: 400;
-}
-
-.mail-menu {
-    margin-left: -10em;
-    margin-top: 4em;
-    font-size: 1em;
-    font-family: "Montserrat";
-    font-weight: 300;
 }
 
 .left-side-account {
@@ -346,14 +345,6 @@
     font-weight: 400;
 }
 
-.mail-menu2 {
-    margin-left: -10em;
-    margin-top: 4em;
-    font-size: 1em;
-    font-family: "Montserrat";
-    font-weight: 300;
-}
-
 .div-btn-side {
     display: flex;
     flex-direction: column;
@@ -394,14 +385,6 @@
     font-size: 5em;
     font-family: "Montserrat";
     font-weight: 400;
-}
-
-.mail-account {
-    margin-left: -12em;
-    margin-top: 7em;
-    font-size: 2em;
-    font-family: "Montserrat";
-    font-weight: 300;
 }
 
 .div-under-user {
@@ -620,4 +603,166 @@
     border: 0.2em solid #000000;
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 20em;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 2em;
+  position: relative;
+  margin-left: 45em;
+  margin-top: 5em;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #a390df;
+  font-weight: 900;
+  font-family: "DynaPuff", system-ui;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  left: 0em;
+  background-color: #a390df;
+}
+
+.title::before {
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #a390df;
+}
+
+.title::after {
+  width: 0.5em;
+  height: 0.5em;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 1em;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #a390df;
+}
+
+.signin a:hover {
+  text-decoration: underline #a390df;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.form label {
+  position: relative;
+  margin-right: 1.5em;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 1em;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 1em;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 3em;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #a390df;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: #a390df;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
 

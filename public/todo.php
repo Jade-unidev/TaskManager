@@ -1,17 +1,7 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    exit();
-}
-
 require __DIR__ . '/../config/connect.php';
-
-
-
-
+require __DIR__ . '/../config/user-var.php';
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -55,6 +45,7 @@ require __DIR__ . '/../config/connect.php';
             <button id="pseudo" class="menu-btn">Modifier le pseudo</button>
             <button id="mdp" class="menu-btn">Modifier le mot de passe</button>
             <button id="mail" class="menu-btn">Modifier l'adresse mail</button>
+            <button id="log" class="menu-log">Login</button>
             <button id="deco" class="menu-btn-deco">Se déconnecter</button>
         </div>
 

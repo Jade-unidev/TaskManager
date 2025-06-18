@@ -1,14 +1,7 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    exit();
-}
-
 require __DIR__ . '/../config/connect.php';
-
+require __DIR__ . '/../config/user-var.php';
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -42,8 +35,7 @@ require __DIR__ . '/../config/connect.php';
 
             <div class="profil-account">    
                 <img src="includes/images/pdp.png" class="pdp-account">
-                <h1 class="username-account">username</h1>
-                <h1 class="mail-account">exemple@gmail.com</h1>
+                <h1 class="username-account"><?= htmlspecialchars($name) ?></h1>
             </div>
 
             <div class="div-under-username">

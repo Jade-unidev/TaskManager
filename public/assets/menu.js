@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.location.href = url;
             });
         } else {
-            console.warn(`L’élément #${id} est introuvable, ma pute`);
+            
         }
     });
 });

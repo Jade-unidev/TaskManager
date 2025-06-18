@@ -23,8 +23,7 @@
             
             <div class="profil-menu2">    
                 <img src="includes/images/pdp.png" class="pdp">
-                <h1 class="username-menu2">username</h1>
-                <h1 class="mail-menu2">exemple@gmail.com</h1>
+                <h1 class="username-menu2"><?= htmlspecialchars($name) ?></h1>
                 <div id="back" class="container-button">
                     <div id="back" class="hover bt-1"></div>
                     <div id="back" class="hover bt-2"></div>
