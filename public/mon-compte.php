@@ -33,9 +33,19 @@ require __DIR__ . '/../config/user-var.php';
 
         <div class="body-account">
 
+            <div id="back" class="container-button">
+                <div id="back" class="hover bt-1"></div>
+                <div id="back" class="hover bt-2"></div>
+                <div id="back" class="hover bt-3"></div>
+                <div id="back" class="hover bt-4"></div>
+                <div id="back" class="hover bt-5"></div>
+                <div id="back" class="hover bt-6"></div>
+                <button id="back" class="button-back"></button>
+            </div>
+
             <div class="profil-account">    
                 <img src="includes/images/pdp.png" class="pdp-account">
-                <h1 class="username-account"><?= htmlspecialchars($name) ?></h1>
+                <h1 class="username-account"><?= htmlspecialchars($_SESSION['username'] ?? 'Invité') ?></h1>
             </div>
 
             <div class="div-under-user">

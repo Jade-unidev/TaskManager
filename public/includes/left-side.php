@@ -23,16 +23,7 @@
             
             <div class="profil-menu2">    
                 <img src="includes/images/pdp.png" class="pdp">
-                <h1 class="username-menu2"><?= htmlspecialchars($name) ?></h1>
-                <div id="back" class="container-button">
-                    <div id="back" class="hover bt-1"></div>
-                    <div id="back" class="hover bt-2"></div>
-                    <div id="back" class="hover bt-3"></div>
-                    <div id="back" class="hover bt-4"></div>
-                    <div id="back" class="hover bt-5"></div>
-                    <div id="back" class="hover bt-6"></div>
-                    <button id="back" class="button-back"></button>
-                </div>
+                <h1 class="username-menu2"><?= htmlspecialchars($_SESSION['username'] ?? 'Invité') ?></h1>
             </div>
             <div class="div-btn-side">
             <button id="myaccount" class="menu-btn2">Mon Compte</button>

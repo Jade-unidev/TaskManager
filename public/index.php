@@ -30,7 +30,7 @@ require __DIR__ . '/../config/user-var.php';
         <?php include 'includes/header-accueil.php'; ?>
         <div class="separation-header"></div>
         <div class="body-accueil">
-            <h1 class="salut-name">Bonjour <?= htmlspecialchars($name) ?> !</h1>
+            <h1 class="salut-name">Bonjour <?= htmlspecialchars($_SESSION['username'] ?? 'Invité') ?> !</h1>
             <h1 class="title-accueil-tm">TaskManager</h1>
             <h3 class="under-title-accueil">Moins de stress, plus de progrès.</h3>
             <div class="ico_div">
@@ -82,7 +82,7 @@ require __DIR__ . '/../config/user-var.php';
         <div id="menu-deroulant" class="menu hidden">
             <div class="profil-menu">    
                 <img src="includes/images/pdp.png" class="pdp">
-                <h1 class="username-menu"><?= htmlspecialchars($name) ?></h1>
+                <h1 class="username-menu"><?= htmlspecialchars($_SESSION['username'] ?? 'Invité') ?></h1>
             </div>
             <button id="account" class="menu-btn">Mon Compte</button>
             <button id="pseudo" class="menu-btn">Modifier le pseudo</button>
