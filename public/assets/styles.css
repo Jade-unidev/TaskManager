@@ -114,7 +114,7 @@
     background-color: #FFCDFF;
     width: 100vw;
     height: 8em;
-    margin-top: 46em;
+    margin-top: 10em;
     display: flex;
 }
 
@@ -400,25 +400,11 @@
 }
 
 .membre {
-    margin-left: 5em;
+    margin-left: 1em;
     margin-top: 2em;
     font-family: "Montserrat";
     font-weight: 200;
     white-space: nowrap;
-}
-
-.x {
-    margin-left: 1em;
-    margin-top: 2em;
-    font-family: "Montserrat";
-    font-weight: 200;
-}
-
-.j {
-    margin-left: 1em;
-    margin-top: 2em;
-    font-family: "Montserrat";
-    font-weight: 200;
 }
 
 .container-button {

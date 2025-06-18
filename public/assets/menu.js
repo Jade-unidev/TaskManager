@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'log', url: 'login.php' },
         { id: 'reg', url: 'register.php' },
         { id: 'back', url: 'index.php' },
+        { id: 'deco', url: 'logout.php' },
     ];
 
     buttons.forEach(({ id, url }) => {

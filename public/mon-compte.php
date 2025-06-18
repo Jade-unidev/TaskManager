@@ -40,11 +40,7 @@ require __DIR__ . '/../config/user-var.php';
 
             <div class="div-under-user">
 
-                <h1 class="membre">Membre depuis :</h1>
-
-                <h1 class="x">0</h1>
-
-                <h1 class="j">jours</h1>
+                <h1 class="membre">Salut ! Bienvenue sur ta To-Do List pérsonalisée !</h1>
 
             </div>
 
