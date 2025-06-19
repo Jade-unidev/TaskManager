@@ -779,28 +779,6 @@
   font-size: 1.5em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .msg-info2 {
   color: #000000;
   margin-top: 1em;
@@ -878,4 +856,177 @@
   margin-top: 1em;
   font-family: "Montserrat";
   font-size: 1.5em;
+}
+
+.body-todo {
+  position: absolute;
+  background-color: #AFB8FF;
+  width: 100vw; 
+  height: 50em; 
+  z-index: -1;
+  display: flex;
+}
+
+.list {
+  background-color: #E3BDFF;
+  width: 30em;
+  height: 40em;
+  border-radius: 3em;
+  border-color: #000000;
+  border: 0.15em solid #000000;
+  margin-top: 3em;
+  margin-left: 10em;
+  overflow-y: auto;       /* Scroll vertical si dépasse */
+  overflow-x: hidden;     /* Pas de scroll horizontal */
+  position: relative;
+}
+
+.add-task {
+  background-color: #E3BDFF;
+  width: 50em;
+  height: 7em;
+  border-radius: 20em;
+  border-color: #000000;
+  border: 0.15em solid #000000;
+  margin-top: 3em;
+  margin-left: 10em;
+  display: flex;
+}
+
+.add-btn {
+  background-color: #FFCDFF;
+  border: 0.15em solid #000000;
+  width: 8.5em;
+  height: 8.5em;
+  border-radius: 20em;
+  margin-left: 51.6em;
+  position: fixed;
+}
+
+.add-btn:hover {
+  background-color: #d4a9d4;
+}
+
+.pls {
+  font-size: 5em;
+  margin-top: 0.15em;
+  font-weight: 300;
+}
+
+.comp {
+  background-color: #E3BDFF;
+  width: 50em;
+  height: 20em;
+  border-radius: 8em;
+  border-color: #000000;
+  border: 0.15em solid #000000;
+  margin-top: 20em;
+  margin-left: -50em;
+}
+
+.in-task {
+  background-color: #E3BDFF;
+  border: none;
+  width: 13em;
+  border-top-left-radius: 20em;
+  border-bottom-left-radius: 20em;
+  margin-left: 0em;
+  font-size: 3em;
+}
+
+.task-nocomp {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-left: 4.5em;
+  margin-top: 2em;
+  color: #ff0000;
+}
+
+.task-prio {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-left: 4.5em;
+  margin-top: 1em;
+  color: #ffa600;
+}
+
+.task-comp {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-left: 4.5em;
+  margin-top: 1em;
+  color: #27c500;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2em;
+    margin-top: 0.5em;
+}
+
+.task input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+    accent-color: #00da2f; 
+    cursor: pointer;
+}
+
+.task span {
+    flex: 1;
+    font-size: 1em;
+    color: #333;
+    font-weight: 300;
+}
+
+.task.prioritaire {
+    border-left: 5px solid red;
+    background-color: #ff000059;
+    color: #ff0000;
+}
+
+input.prio-checkbox-unique {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2em;
+  height: 2em;
+  border: 2px solid red;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  outline: none;
+  margin-right: 1em;
+  background-color: white;
+}
+
+input.prio-checkbox-unique::before {
+  content: "⚠️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6em;
+  pointer-events: none;
+}
+
+input.prio-checkbox-unique:checked {
+  background-color: red;
+  border-color: darkred;
+}
+
+.delete-btn {
+    font-size: 18px;
+    color: #cc0000;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+.delete-btn:hover {
+    color: #ff4444;
 }
